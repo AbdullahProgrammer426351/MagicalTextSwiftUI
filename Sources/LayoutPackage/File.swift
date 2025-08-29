@@ -7,8 +7,11 @@
 
 import SwiftUI
 
-struct MagicalText: View {
-    var body: some View {
+public struct MagicalText: View {
+    public init() {}   // 👈 Required so other modules can construct it
+    
+    public var body: some View {
         Text("This is magical text view")
     }
 }
+
